@@ -12,6 +12,14 @@ justify-content: space-between;
 align-items: center;
 padding: 10px 30px 10px 30px;
 }
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0;
+    }
+    body {
+        width: 632px;
+    }
+}
 
 .view {
 background-image: url(https://kenpro-shop.jp/user_data/packages/default/img/category/material/best/sky_02.jpg);
@@ -20,12 +28,11 @@ background-image: url(https://kenpro-shop.jp/user_data/packages/default/img/cate
 .space{
 height: 110px;
 width: auto;
-
 }
-.body {
-padding: 1400px auto;
 
-}
+.footer {
+ text-align: center;
+    }
 .tweet {
 display: flex;
 justify-content: space-between;

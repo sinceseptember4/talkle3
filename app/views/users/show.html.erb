@@ -1,9 +1,12 @@
 <H3><%=current_user.nickname%>---<%= link_to '編集', "/users/#{current_user.id}/edit", method: :get %></h3>
+<a href="https://px.a8.net/svt/ejp?a8mat=3HKZ0M+DJM182+4OZW+5YJRM" rel="nofollow">【yuzen】</a>
+
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3HKZ0M+DJM182+4OZW+5YJRM" alt="">
  <span><% @tweets.each do |tweet| %></span>
   <div class = tweet>
       <div class =write >
         <p><%= current_user.nickname %>---<%= tweet.created_at%></p>
-        <p><%= tweet.text %>---<%link_to '詳細', "/tweets/#{tweet.id}", mehod: :get%></p>
+        <h3><%= tweet.text %>---<%= link_to 'コメント', "/tweets/#{tweet.id}", method: :get %></h3>
     </div>
 
            <% if user_signed_in? && current_user.id == tweet.user_id %>
@@ -22,3 +25,10 @@
   <span><% end %></span>
   <%= paginate(@tweets) %>
   
+  <a href="https://px.a8.net/svt/ejp?a8mat=3HKZ0M+DJM182+4OZW+5ZU29" rel="nofollow">
+<img border="0" width="234" height="60" alt="" src="https://www23.a8.net/svt/bgt?aid=210930502819&wid=001&eno=01&mid=s00000021902001007000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3HKZ0M+DJM182+4OZW+5ZU29" alt="">
+
+<a href="https://px.a8.net/svt/ejp?a8mat=3HKZ0M+C7DX82+2PEO+BX3J5" rel="nofollow">
+<img border="0" width="100" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=210930502738&wid=001&eno=01&mid=s00000012624002002000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3HKZ0M+C7DX82+2PEO+BX3J5" alt="">

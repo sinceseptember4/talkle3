@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link rel=”icon” type=”image/png” href=“/image/t-logo.png”>
   </head>
   <header class = header>
@@ -31,9 +32,14 @@
 
   <body class=view>
   <div class = space></div>
+  <div class=add>
+    <ul>
+
+    </ul>
+  </div>
     <%= yield %>
   </body>
   <footer>
-  <p>@D-codeing</p>
+  <p class=footer>@D-coding</p>
   </footer>
 </html>

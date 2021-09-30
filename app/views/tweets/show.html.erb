@@ -1,9 +1,19 @@
   <div class = tweet>
       <div class =write >
         <p><%= @tweet.user.nickname %>---<%= @tweet.created_at%></p>
-        <p><%= @tweet.text %></p>
+        <h3><%= @tweet.text %></h3>
     </div>
+    
     </div>
+<a href="https://px.a8.net/svt/ejp?a8mat=3HKZ0M+C5LMEQ+3250+6MROH" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=210930502735&wid=001&eno=01&mid=s00000014274001114000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3HKZ0M+C5LMEQ+3250+6MROH" alt="">
+
+<a href="https://px.a8.net/svt/ejp?a8mat=3HKZ0D+12P73M+4MD6+5ZEMP" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=210930493065&wid=001&eno=01&mid=s00000021561001005000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3HKZ0D+12P73M+4MD6+5ZEMP" alt="">
+
+
      <h4>＜コメント一覧＞</h4>
    <div class = tweet>
   <h4>コメントする</h4>
@@ -20,7 +30,7 @@
  <div class = tweet>
       <div class =write >
         <p><%= comment.user.nickname%>---<%= comment.created_at%></p>
-        <p><%= comment.text %></p>
+        <h3><%= comment.text %></h3>
     </div>
 
            <% if user_signed_in? && current_user.id == comment.user_id %>
@@ -38,3 +48,9 @@
     </div>
   <span><% end %></span>
  <%= paginate(@comments) %>
+ <a href="https://px.a8.net/svt/ejp?a8mat=3HKZ0D+1823JM+1892+6IWSH" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=210930493074&wid=001&eno=01&mid=s00000005735001096000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3HKZ0D+1823JM+1892+6IWSH" alt="">
+<a href="https://px.a8.net/svt/ejp?a8mat=3HKZ0M+FMMNG2+1EB4+66H9D" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www20.a8.net/svt/bgt?aid=210930502945&wid=001&eno=01&mid=s00000006520001038000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3HKZ0M+FMMNG2+1EB4+66H9D" alt="">

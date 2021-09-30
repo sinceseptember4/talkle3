@@ -1,9 +1,16 @@
+<%= link_to "規約（使用前に必ず読む）", terms_tweets_url, class: "get" %>
+<a href="https://px.a8.net/svt/ejp?a8mat=3HKY83+1DEZZM+50+2HQGAP" rel="nofollow">
+<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=210929475083&wid=001&eno=01&mid=s00000000018015072000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3HKY83+1DEZZM+50+2HQGAP" alt="">
+
+<a href="https://px.a8.net/svt/ejp?a8mat=3HKZ0D+12P73M+4MD6+601S2" rel="nofollow">人気の漫画が32000冊以上読み放題【スキマ】</a>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3HKZ0D+12P73M+4MD6+601S2" alt="">
 
   <span><% @tweets.each do |tweet| %></span>
   <div class = tweet>
       <div class =write >
         <p><%= tweet.user.nickname%>---<%= tweet.created_at%></p>
-        <p><%= tweet.text %>---<%= link_to 'コメント', "/tweets/#{tweet.id}", method: :get %></p>
+        <h3><%= tweet.text %>---<%= link_to 'コメント', "/tweets/#{tweet.id}", method: :get %></h3>
     </div>
 
            <% if user_signed_in? && current_user.id == tweet.user_id %>
@@ -20,7 +27,19 @@
            <% end %>
     </div>
   <span><% end %></span>
+  
+  
   <%= paginate(@tweets) %>
+  
+  <a href="https://px.a8.net/svt/ejp?a8mat=3HKY83+1CTKDU+1WP2+67Z9T" rel="nofollow">
+<img border="0" width="120" height="60" alt="" src="https://www21.a8.net/svt/bgt?aid=210929475082&wid=001&eno=01&mid=s00000008903001045000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif? 
+
+
+  <a href="https://px.a8.net/svt/ejp?a8mat=3HKZ0M+C6720I+4QGO+5ZMCH" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www20.a8.net/svt/bgt?aid=210930502736&wid=001&eno=01&mid=s00000022092001006000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=3HKZ0M+C6720I+4QGO+5ZMCH" alt="">
+  
   
 
   

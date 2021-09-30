@@ -35,6 +35,9 @@ class TweetsController < ApplicationController
     def search
     @tweet = Tweet.where('text LIKE(?)', "%#{params[:search]}%").order("created_at DESC").page(params[:page]).per(10)
     end
+    
+    def terms
+    end
 
     private
     def  tweet_params
