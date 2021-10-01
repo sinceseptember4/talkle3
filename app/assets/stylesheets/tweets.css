@@ -11,8 +11,15 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
-     width: 350px;
-    padding: 0; }
+
+    padding: 0; 
+    }
+  #title {
+    margin: 10px
+    }
+  #pages {
+    margin: 10px;
+    }
 
   .search {
     display:none
