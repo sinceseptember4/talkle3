@@ -11,10 +11,16 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
+     width: 350px;
     padding: 0; }
 
-  body {
-    width: 632px; } }
+  .search {
+    display:none
+    }
+  }
+ul {
+  list-style: none;
+}
 .view {
   background-image: url(https://kenpro-shop.jp/user_data/packages/default/img/category/material/best/sky_02.jpg);
   background-size: cover; }

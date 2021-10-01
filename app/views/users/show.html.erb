@@ -5,8 +5,8 @@
  <span><% @tweets.each do |tweet| %></span>
   <div class = tweet>
       <div class =write >
-        <p><%= current_user.nickname %>---<%= tweet.created_at%></p>
-        <h3><%= tweet.text %>---<%= link_to 'コメント', "/tweets/#{tweet.id}", method: :get %></h3>
+        <p><%= current_user.nickname %>&nbsp;&nbsp;<%= tweet.created_at.strftime("%Y-%m-%d %H:%M:%S")%></p>
+        <h3><%= tweet.text %>&nbsp;&nbsp;&nbsp;<%= link_to 'コメント', "/tweets/#{tweet.id}", method: :get %></h3>
     </div>
 
            <% if user_signed_in? && current_user.id == tweet.user_id %>
